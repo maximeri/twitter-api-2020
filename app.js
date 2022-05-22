@@ -7,7 +7,7 @@ const cors = require('cors')
 const swaggerUi = require('swagger-ui-express')
 const swaggerFile = require('./swagger-output.json')
 const routes = require('./routes')
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 const session = require('express-session')
 const passport = require('./config/passport')
 const SESSION_SECRET = 'secret'
@@ -29,6 +29,6 @@ app.use((req, res, next) => {
 })
 app.use('/api-doc', swaggerUi.serve, swaggerUi.setup(swaggerFile, { swaggerOptions: { persistAuthorization: true } }))
 app.use('/api', routes)
-app.listen(port, () => console.log(`App is listening on port ${port}!`))
+app.listen(PORT, () => console.log(`App is listening on port ${PORT}!`))
 
 module.exports = app
