@@ -14,7 +14,7 @@
 ## <span style="color: red">**Getting Started**<span>
 ### 1. 將專案 clone 到本機
 ```bash
-git clone https://github.com/GallonShih/twitter-api-2020.git
+git clone https://github.com/maximeri/twitter-api-2020
 ```
 ### 2. 透過 npm 安裝相關套件
 ```bash
